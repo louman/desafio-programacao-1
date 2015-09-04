@@ -27,6 +27,8 @@ group :development, :test do
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 group :development do
@@ -35,8 +37,6 @@ group :development do
 end
 
 group :test do
-  gem 'factory_girl_rails'
   gem 'simplecov', require: false
   gem 'database_cleaner'
-  gem 'rspec-rails'
 end
