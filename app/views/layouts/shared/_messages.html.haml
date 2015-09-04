@@ -1,0 +1,4 @@
+- flash.each do |key, value|
+  %div.alert-box{ data: {alert:  ''}, class: key }
+    = value
+    = link_to('&times;'.html_safe, '#', class: 'close')
