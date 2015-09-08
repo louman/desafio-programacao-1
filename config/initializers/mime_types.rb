@@ -2,3 +2,5 @@
 
 # Add new mime types for use in respond_to blocks:
 # Mime::Type.register "text/richtext", :rtf
+
+#Paperclip.options[:content_type_mappings][:dat] = [ "application/octet-stream", "binary", 'text/plain' ]

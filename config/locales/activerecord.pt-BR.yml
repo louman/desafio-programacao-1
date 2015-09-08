@@ -1,0 +1,17 @@
+pt-BR:
+  attributes:
+    created_at: 'Criado em'
+    updated_at: 'Atualizado em'
+  activerecord:
+    errors:
+      models:
+        upload:
+          attributes:
+            attachment_content_type:
+              invalid: 'Formato inválido.'
+    models:
+      upload:
+        one: 'Arquivo'
+        other: 'Arquivos'
+    attributes:
+      upload:

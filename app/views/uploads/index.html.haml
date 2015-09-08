@@ -1,4 +1,7 @@
-%h2.title Uploads
+%h2.title
+  Uploads
+  = link_to 'Enviar Arquivo', '#', class: 'button right', data: { reveal_id: "modal_upload", reveal_ajax: new_upload_path }
+  %div.reveal-modal.tiny{id: "modal_upload", data: {reveal: ''}}
 
 %table{style: 'width: 100%'}
   %thead

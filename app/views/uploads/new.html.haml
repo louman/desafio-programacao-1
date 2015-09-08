@@ -1,0 +1,9 @@
+= form_for @upload, multipart: true do |f|
+  .row
+    .large-12.columns
+      .row
+        .large-12.columns
+          = f.file_field :attachment
+      .row
+        .large-12.columns
+          = f.submit 'Enviar', class: 'button postfix'

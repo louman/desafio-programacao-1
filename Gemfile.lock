@@ -245,7 +245,7 @@ DEPENDENCIES
   jquery-rails
   mysql2
   omniauth-google-oauth2
-  paperclip (~> 4.2)
+  paperclip
   pry-byebug
   quiet_assets
   rails (= 4.2.0)

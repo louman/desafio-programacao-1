@@ -17,7 +17,7 @@ gem 'devise'
 gem 'devise-i18n'
 gem "omniauth-google-oauth2"
 
-gem 'paperclip', '~> 4.2'
+gem 'paperclip'
 
 gem 'dotenv-rails'
 
