@@ -1,0 +1,5 @@
+%tr
+  %td= order.customer_name
+  %td= order.merchant_name
+  %td= order.merchant_address
+  %td.text-right= number_to_currency(order.total)

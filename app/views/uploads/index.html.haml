@@ -7,6 +7,8 @@
   %thead
     %tr
       %th Por
-      %th Arquivo
+      %th{colspan: 2} Data
   %tbody
     = render @uploads
+
+= will_paginate @uploads
