@@ -21,6 +21,8 @@ gem 'paperclip'
 
 gem 'dotenv-rails'
 
+gem 'loser'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug'
