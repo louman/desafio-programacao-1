@@ -26,4 +26,14 @@ RSpec.describe OrderItem do
 
     end
   end
+
+  describe '#total' do
+
+    let(:order_item) { create(:order_item, unit_price: 10, quantity: 2) }
+
+    it 'multiplies unit_price by quantity' do
+      expect(order_item.total).to eq 20
+    end
+  end
+
 end
