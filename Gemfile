@@ -44,4 +44,5 @@ end
 group :test do
   gem 'simplecov', require: false
   gem 'database_cleaner'
+  gem "codeclimate-test-reporter", require: nil
 end
