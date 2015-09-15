@@ -11,7 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150904225926) do
+ActiveRecord::Schema.define(version: 20150915184100) do
+
+  create_table "order_items", force: :cascade do |t|
+    t.integer  "order_id",    limit: 4
+    t.decimal  "unit_price",              precision: 10, scale: 2
+    t.integer  "quantity",    limit: 4
+    t.string   "description", limit: 255
+    t.datetime "created_at",                                       null: false
+    t.datetime "updated_at",                                       null: false
+  end
+
+  add_index "order_items", ["order_id"], name: "index_order_items_on_order_id", using: :btree
+
+  create_table "orders", force: :cascade do |t|
+    t.integer  "upload_id",        limit: 4
+    t.decimal  "total",                        precision: 10, scale: 2
+    t.string   "customer_name",    limit: 255
+    t.string   "merchant_address", limit: 255
+    t.string   "merchant_name",    limit: 255
+    t.datetime "created_at",                                            null: false
+    t.datetime "updated_at",                                            null: false
+  end
+
+  add_index "orders", ["upload_id"], name: "index_orders_on_upload_id", using: :btree
 
   create_table "uploads", force: :cascade do |t|
     t.integer  "user_id",                 limit: 4
