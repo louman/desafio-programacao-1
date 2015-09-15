@@ -1,3 +1,7 @@
 %tr
   %td= upload.user.name
-  %td= link_to 'Baixar', upload.attachment.url, target: :blank
+  %td.text-center= l(upload.created_at, format: :short)
+  %td.text-center
+    = link_to 'Arquivo', upload.attachment.url, target: :blank
+    |
+    = link_to 'Pedidos', upload_path(upload)

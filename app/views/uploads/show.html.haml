@@ -1,0 +1,20 @@
+%h3
+  Pedidos
+  %span.right
+    Enviado por #{@upload.user.name} em #{l(@upload.created_at, format: :short)}
+
+%h3 
+
+%table{style: 'width: 100%'}
+  %thead
+    %tr
+      %th Comprador
+      %th Vendedor
+      %th Endereço
+      %th Valor Total
+  %tbody
+    = render partial: 'order', collection: @upload.orders, as: :order
+  %tfoot
+    %tr
+      %td{colspan: 3} Total
+      %td.text-right= number_to_currency(@upload.orders_total)
